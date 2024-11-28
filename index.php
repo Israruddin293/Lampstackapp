@@ -1,9 +1,12 @@
 <?php
+
+include('config.php');
+
 // Database connection settings
-$servername = "localhost";
-$username = "admin";
-$password = "password";
-$dbname = "MyAppDB";
+$servername = DB_HOST; // Use the DB_HOST from config.php
+$username = DB_USER;
+$password = DB_PASS;
+$dbname = DB_NAME;
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
